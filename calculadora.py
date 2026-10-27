@@ -3,4 +3,4 @@ def promedio(notas):
 
 
 def estado(nota):
-    return "Aprobado"
+    return "Aprobado" if nota >= 3.0 else "Reprobado"
