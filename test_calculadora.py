@@ -1,4 +1,4 @@
-from calculadora import promedio, estado
+from calculadora import estado, promedio
 
 
 def test_promedio():

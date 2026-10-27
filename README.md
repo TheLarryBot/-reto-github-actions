@@ -2,7 +2,7 @@
 
 Workflow de integración continua que ejecuta `pytest` en cada push a `main`
 (y en pull requests hacia `main`). Si las pruebas pasan, un segundo job
-construye una imagen Docker (extensión CD).
+revisa el estilo del código con ruff.
 
 ## Experimentos
 
@@ -10,7 +10,7 @@ construye una imagen Docker (extensión CD).
 - **B – Fallo:** `estado()` modificada para devolver siempre `"Aprobado"`:
   `test_reprobado` falla con `AssertionError: assert 'Aprobado' == 'Reprobado'`
   (`estado(2.5)` debía devolver `"Reprobado"`). El step *Ejecutar pruebas* queda en rojo
-  y el job `docker` no se ejecuta.
+  y el job `lint` no se ejecuta.
 
 ## Reflexión
 
