@@ -2,7 +2,8 @@
 
 Workflow de integración continua que ejecuta `pytest` en cada push a `main`
 (y en pull requests hacia `main`). Si las pruebas pasan, un segundo job
-revisa el estilo del código con ruff.
+revisa la calidad del código con ruff
+(`ruff check` y `ruff format --check`, reglas en `pyproject.toml`).
 
 ## Experimentos
 

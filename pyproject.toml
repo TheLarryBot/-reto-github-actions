@@ -1,0 +1,8 @@
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+
+[tool.ruff.lint]
+# E/W: estilo pycodestyle, F: errores pyflakes, I: orden de imports,
+# N: nombres, B: bugs comunes, UP: sintaxis moderna de Python
+select = ["E", "W", "F", "I", "N", "B", "UP"]
